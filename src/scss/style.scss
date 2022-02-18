@@ -1,44 +1,17 @@
 @import "./settings/reset";
-
-$fz:80px;
-$clr: yellow;
-
-%tplborder { // шаблоны
-    border-bottom: 5px dashed red;
+@import "./variables";
+@import "./header";
+@import "./main";
+@import "./description.scss";
+body {
+    background-color: $bc;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 16px;
 }
-
-@mixin fontz($f) {
-    font-size: $f;
-}
-
-.block {
-    &.block--big {
-        font-size: $fz;
-    }
-    font-size: 30px;
-    display: block;
-    >p {
-        color: $clr;
-    }
-    .block__text {
-        font-size: 35px;
-        span {
-            color: red;
-        }    
-    }
-}
-.link {
-    color: blue;
-    font-size: 20px;
-    .block & {
-        font-size: 100px;
-    }
-    &:hover {
-        color: red;
-    }
-    @extend %tplborder;
-}
-.link-2 {
-    @include fontz(10px);
-    border-bottom: 5px dashed black;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }

@@ -1,0 +1,74 @@
+@import "./variables.scss";
+
+.description {
+    &__header {
+        font-weight: 800;
+        font-size: 250%;
+        line-height: 125%;
+        text-align: center;
+        letter-spacing: -0.5px;
+        color: $header;
+        margin-bottom: 17px;
+    }
+    &__subtitle {
+        max-width: 768px;
+        font-size: 125%;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: -0.25px;
+        color: $font_clr;
+        margin: 0 auto 80px auto;
+    }
+    &_items__wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(auto, 325px));
+        grid-gap: 64px;
+        justify-content: center;
+    }
+    &_item {
+        &__img {
+            margin-bottom: 16px;
+            img {
+                margin: 0 auto;
+            }
+        }
+        &__title {
+            font-weight: bold;
+            font-size: 150%;
+            line-height: 142%;
+            text-align: center;
+            letter-spacing: -0.25px;
+            color: $header;
+            margin-bottom: 8px;
+        }
+        &__subtitle {
+            font-size: 112.5%;
+            line-height: 150%;
+            text-align: center;
+            letter-spacing: -0.25px;
+            color: $font_clr;
+        }
+    }
+}
+
+.description {
+}
+.description__container {
+}
+.container {
+}
+.description__header {
+}
+.description__subtitle {
+}
+.description_items__wrap {
+
+}
+.description_item {
+}
+.description_item__img {
+}
+.description_item__title {
+}
+.description_item__subtitle {
+}
