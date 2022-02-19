@@ -1,0 +1,125 @@
+@import './variables';
+
+.subscribe {
+    &__container {
+        padding-bottom: 64px;
+    }
+    &__form {
+        background: #5D5DFF;
+        padding: 65px 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+    }
+    .form_content__email:focus {
+        outline: none;
+    }
+    .form_content__email::placeholder {
+        font-size: 100%;
+        line-height: 150%;
+        letter-spacing: -0.25px;
+        color: #ABABFF;
+    }
+    input[type=email]{
+        padding-left: 16px;
+        font-size: 15px;
+        color: #ABABFF;
+    }
+    .form_content {
+        display: flex;
+        &__email {
+            background: #4B4ACF;
+            border: 1px solid #8D8DFF;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+        &__btn {
+            background: #F4F4FF;
+            box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+            border-radius: 2px;
+            font-weight: 500;
+            font-size: 100%;
+            line-height: 150%;
+            letter-spacing: -0.25px;
+            color: #5D5DFF;
+            padding: 12px 32px;
+            cursor: pointer;
+        }
+    }
+    .form__text {
+        &__title {
+            font-weight: bold;
+            font-size: 200%;
+            line-height: 131%;
+            letter-spacing: -0.25px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+        &__subtitle {
+            font-size: 112.5%;
+            line-height: 150%;
+            letter-spacing: -0.25px;
+            color: #E2E1FF;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .subscribe {
+        &__form {
+            padding: 35px 30px;
+        }
+        .form__text {
+            &__title {            
+                font-size: 150%;
+            }
+            &__subtitle {
+                font-size: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 892px) {
+    .subscribe {
+        &__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:flex-start;
+        }
+        .form__text {
+            &__title {
+                
+            }
+            &__subtitle {
+                margin-bottom: 12px;
+            }
+        }
+    }    
+}
+
+@media (max-width: 476px) {
+    .subscribe {
+        &__form {
+            background: #5D5DFF;
+            padding: 25px;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+        }
+        .form_content {
+            flex-direction: column;
+            &__email {
+                height: 48px;
+                margin-bottom: 10px;
+            }
+        }
+        .form_content__email::placeholder {
+            font-size: 100%;
+            line-height: 150%;
+            letter-spacing: -0.25px;
+            color: #ABABFF;
+        }
+    }    
+}

@@ -40,6 +40,9 @@
                 color: #FFFFFF;
             }
             margin-right: 12px;
+            &:hover {
+                cursor: pointer;
+            }
         }
         .btn_grey {
             background: $btns_grey_bg;
@@ -48,6 +51,9 @@
             padding: 12px 32px;
             a {
                 color: #C5D2DC;
+            }
+            &:hover {
+                cursor: pointer;
             }
         }
         margin-bottom: 64px;
