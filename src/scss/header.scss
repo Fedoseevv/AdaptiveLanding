@@ -16,6 +16,10 @@
             letter-spacing: -0.25px;
             color: #C5D2DC;
             padding-right: 48px;
+            a {
+                color: #C5D2DC;
+            }
+            cursor: pointer;
         }
         &_sign {
             background: $btns_bg;
@@ -23,6 +27,7 @@
             border-radius: 2px;
             padding: 8px 20px;
             margin-bottom: 7px;
+            cursor: pointer;
         }
         &_sign a {
             font-weight: 500;
@@ -30,11 +35,13 @@
             letter-spacing: -0.25px;
             color: #FFFFFF;
         }
+        z-index: 2;
     }
     &__bg_wrap {
         position: absolute;
         top: 0;
         right: 0;
+        z-index: -1;
     }
     margin-bottom: 80px;
 }

@@ -116,6 +116,7 @@ select {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  z-index: 2;
 }
 
 .header__btns_doc {
@@ -123,6 +124,11 @@ select {
   letter-spacing: -0.25px;
   color: #C5D2DC;
   padding-right: 48px;
+  cursor: pointer;
+}
+
+.header__btns_doc a {
+  color: #C5D2DC;
 }
 
 .header__btns_sign {
@@ -132,6 +138,7 @@ select {
   border-radius: 2px;
   padding: 8px 20px;
   margin-bottom: 7px;
+  cursor: pointer;
 }
 
 .header__btns_sign a {
@@ -145,6 +152,7 @@ select {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -1;
 }
 
 .main {
